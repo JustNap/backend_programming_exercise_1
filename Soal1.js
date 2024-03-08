@@ -12,9 +12,7 @@ function prima(angka){
 
     let i = 5;
     while (i * i <= angka){
-        if (angka % i === 0 || angka % (i + 2) === 0){
-            return false;
-        }
+        if (angka % i === 0 || angka % (i + 2) === 0) return false;
         i += 6;
     }
 
@@ -22,7 +20,7 @@ function prima(angka){
 }
 
 for(let i = 1; i <= 1000; i++){
-    if(angka(i)){
+    if(prima(i)){
         console.log(i);
     }
 }
