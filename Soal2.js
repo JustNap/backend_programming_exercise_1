@@ -21,6 +21,6 @@ const students = [
   },
 ];
 
-students.sort(() => {}); // FIXME
+students.sort((a, b) => a.score - b.score);
 
 console.log(students);
