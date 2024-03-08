@@ -21,6 +21,6 @@ const students = [
   },
 ];
 
-students.sort((b, a) => b.score - a.score);
+students.sort((a, b) => b.score - a.score);
 
 console.log(students);
